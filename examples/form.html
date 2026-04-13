@@ -1,0 +1,10 @@
+<form class="js-lead-form" action="/wp-json/leadflow/v1/submit">
+  <input name="FNAME" required />
+  <input name="EMAIL" type="email" required />
+  <input type="submit" value="Submit" />
+  <div class="js-form-feedback"></div>
+</form>
+<script type="module">
+import { initLeadForms } from './lead-form.js';
+initLeadForms();
+</script>
